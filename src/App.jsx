@@ -3,19 +3,17 @@ import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Home } from "./Home";
 import { Footer } from "./Footer";
-import { ItemList } from "./components/ItemList/ItemList";
-import { Counter } from "./components/Counter/Counter";
+import { ItemListContainer } from "./components/ItemList/ItemListContainer";
+import { CounterContainer } from "./components/Counter/CounterContainer";
 
 function App() {
-  let saludo = "Hola Coderhouse, PROP padre APP a hijo ItemList";
-
   return (
     <div className="App">
       <Navbar />
       <Home />
-      <ItemList saludo={saludo} edad={38} nombre={"Juan Cruz"} />
+      <ItemListContainer />
       <Footer />
-      <Counter />
+      <CounterContainer />
     </div>
   );
 }

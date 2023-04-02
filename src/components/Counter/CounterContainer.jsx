@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { CounterPresentation } from "./CounterPresentation";
 
-export const Counter = () => {
+export const CounterContainer = () => {
   const [counter, setCounter] = useState(0);
   const [user, setUser] = useState("");
 
@@ -26,13 +27,15 @@ export const Counter = () => {
 
   return (
     <div>
-      <h2>{counter}</h2>
-      <button onClick={sumar}>Sumar</button>
-      <button onClick={restar}>Restar</button>
-      <button onClick={reiniciar}>Reiniciar</button>
-      <button onClick={login}>Login</button>
-      <button onClick={logout}>Logout</button>
-      <h1>{user}</h1>
+      <CounterPresentation
+        counter={counter}
+        sumar={sumar}
+        restar={restar}
+        reiniciar={reiniciar}
+        login={login}
+        logout={logout}
+        user={user}
+      />
     </div>
   );
 };
