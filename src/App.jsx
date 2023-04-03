@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Navbar } from "./components/Navbar/Navbar";
+import { NavbarContainer } from "./components/Navbar/NavbarContainer";
 import { Home } from "./Home";
 import { Footer } from "./Footer";
 import { ItemListContainer } from "./components/ItemList/ItemListContainer";
@@ -9,7 +9,7 @@ import { CounterContainer } from "./components/Counter/CounterContainer";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <NavbarContainer />
       <Home />
       <ItemListContainer />
       <Footer />

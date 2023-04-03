@@ -1,8 +1,48 @@
 .ContainerNavbar {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   height: auto;
+  background-color: rgb(1, 45, 82);
+}
+
+.ContainerNavbarLi {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: steelblue;
+}
+
+.ContainerNavbarLi :hover {
+  background-color: rgb(40, 118, 182);
+}
+
+.CarWidget {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  margin-right: 25px;
+}
+
+.datacom {
+  width: 25%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.imgLogo {
+  width: auto;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
 }
