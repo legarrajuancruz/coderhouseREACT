@@ -1,5 +1,5 @@
-import React from "react";
+import estilos from "../ItemList/ItemList.module.css";
 
 export const ItemListPresentation = ({ greetings }) => {
-  return <div>{greetings}</div>;
+  return <div className={estilos.Saludos}>{greetings}</div>;
 };

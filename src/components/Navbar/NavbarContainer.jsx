@@ -1,5 +1,5 @@
 import estilo from "./Navbar.module.css";
-import { CarWidgetContainer } from "../CartWidget/CarWidgetContainer";
+import { CartWidgetContainer } from "../CartWidget/CartWidgetContainer";
 import imgLogo from "../../assets/images/Datacom Isotipo.png";
 
 export const NavbarContainer = () => {
@@ -19,7 +19,7 @@ export const NavbarContainer = () => {
         <li>Gabinetes</li>
       </ul>
       <div className={estilo.CarWidget}>
-        <CarWidgetContainer />
+        <CartWidgetContainer />
       </div>
     </div>
   );

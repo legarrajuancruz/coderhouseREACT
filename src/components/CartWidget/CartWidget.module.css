@@ -1,0 +1,9 @@
+.CartWidgetPos {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 25px;
+}

@@ -7,11 +7,13 @@ import { ItemListContainer } from "./components/ItemList/ItemListContainer";
 import { CounterContainer } from "./components/Counter/CounterContainer";
 
 function App() {
+  const saludos = "Hola, Bienvenido a DATACOM";
+
   return (
     <div className="App">
       <NavbarContainer />
+      <ItemListContainer saludos={saludos} />
       <Home />
-      <ItemListContainer />
       <Footer />
       <CounterContainer />
     </div>

@@ -1,11 +1,14 @@
 import { ItemListPresentation } from "./ItemListPresentation";
-import estilos from "./ItemList.modulo.css";
-export const ItemListContainer = () => {
+
+export const ItemListContainer = ({ saludos }) => {
   const greetings = "Hola CoderHouse desde ItemList";
 
   return (
-    <div className={estilos.bienvenida}>
-      <ItemListPresentation greetings={greetings} />
+    <div>
+      <h1>{saludos}</h1>
+      <div>
+        <ItemListPresentation greetings={greetings} />
+      </div>
     </div>
   );
 };
