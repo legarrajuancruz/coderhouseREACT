@@ -1,5 +1,20 @@
-import estilos from "../ItemList/ItemList.module.css";
+import { ItemCard } from "./ItemCard";
 
-export const ItemListPresentation = ({ greetings }) => {
-  return <div className={estilos.Saludos}>{greetings}</div>;
+export const ItemListPresentation = ({ items }) => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        flexWrap: "wrap",
+        padding: "25px",
+        marginTop: "1vh",
+        marginBottom: "1vh",
+      }}
+    >
+      {items.map((items) => {
+        return <ItemCard items={items} key={items.id} />;
+      })}
+    </div>
+  );
 };
