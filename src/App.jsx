@@ -5,6 +5,7 @@ import { Home } from "./Home";
 import { Footer } from "./Footer";
 import { ItemListContainer } from "./components/ItemList/ItemListContainer";
 import { CounterContainer } from "./components/Counter/CounterContainer";
+import FetchingData from "./components/FetchingData/FetchingData";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <Footer />
       <CounterContainer />
+      <FetchingData />
     </div>
   );
 }
