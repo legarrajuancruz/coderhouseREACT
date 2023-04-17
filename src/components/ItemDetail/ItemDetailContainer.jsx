@@ -4,7 +4,6 @@ import { products } from "../ProductsMock";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
-
   let id = 3;
 
   useEffect(() => {
@@ -14,7 +13,7 @@ const ItemDetailContainer = () => {
 
   console.log(product);
 
-  return <ItemDetailPresentation />;
+  return <ItemDetailPresentation product={product} />;
 };
 
 export default ItemDetailContainer;

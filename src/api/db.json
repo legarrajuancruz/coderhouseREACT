@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Nvidia GT 730",
+      "price": 44500,
+      "stock": 10,
+      "description": "Placa de video Geforce Nvidia Gt730",
+      "category": "Gama Baja",
+      "img": "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681663601/rtx3060_ln3rsq.png"
+    },
+    {
+      "id": 2,
+      "title": "Nvidia GT 1030",
+      "price": 49500,
+      "stock": 13,
+      "description": "Placa de video Geforce Nvidia Gt1030",
+      "category": "Gama Baja",
+      "img": "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681663598/gt1030_kwundc.png"
+    },
+    {
+      "id": 3,
+      "title": "Nvidia GTX 1050ti",
+      "price": 127000,
+      "stock": 9,
+      "description": "Placa de video Geforce Nvidia Gtx1050ti",
+      "category": "Gama media",
+      "img": "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681663597/gtx1050ti_tu9duy.png"
+    },
+    {
+      "id": 4,
+      "title": "Nvidia RTX 3060",
+      "price": 279000,
+      "stock": 15,
+      "description": "Placa de video Geforce Nvidia Rtx3060",
+      "category": "Gama alta",
+      "img": "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681663601/rtx3060_ln3rsq.png"
+    },
+    {
+      "id": 5,
+      "title": "Nvidia RTX 3070ti",
+      "price": 35000,
+      "stock": 18,
+      "description": "Placa de video Geforce Nvidia Rtx3070 ti",
+      "category": "Gama alta",
+      "img": "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681663598/rtx3070ti_tb18yc.png"
+    },
+    {
+      "id": 6,
+      "title": "Nvidia RTX 3080ti",
+      "price": 490000,
+      "stock": 18,
+      "description": "Placa de video Geforce Nvidia Rtx3080 ti",
+      "category": "Gama alta",
+      "img": "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681771918/3080ti_qnkjtx.png"
+    }
+  ]
+}

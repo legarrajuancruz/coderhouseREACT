@@ -44,4 +44,13 @@ export let products = [
     category: "Gama alta",
     img: "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681663598/rtx3070ti_tb18yc.png",
   },
+  {
+    id: 6,
+    title: "Nvidia RTX 3080ti",
+    price: 490000,
+    stock: 18,
+    description: "Placa de video Geforce Nvidia Rtx3080 ti",
+    category: "Gama alta",
+    img: "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681771918/3080ti_qnkjtx.png",
+  },
 ];
