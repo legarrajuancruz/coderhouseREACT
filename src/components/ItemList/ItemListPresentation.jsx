@@ -1,6 +1,6 @@
 import { ItemCard } from "./ItemCard";
 
-export const ItemListPresentation = ({ items }) => {
+export const ItemListPresentation = ({ items, borrarItem, editarItem }) => {
   return (
     <div
       style={{
@@ -13,7 +13,14 @@ export const ItemListPresentation = ({ items }) => {
       }}
     >
       {items.map((items) => {
-        return <ItemCard items={items} key={items.id} />;
+        return (
+          <ItemCard
+            items={items}
+            key={items.id}
+            borrarItem={borrarItem}
+            editarItem={editarItem}
+          />
+        );
       })}
     </div>
   );
