@@ -14,7 +14,6 @@ function App() {
       <ItemListContainer />
       <Home />
       <Footer />
-      <CounterContainer />
       <ItemDetailContainer />
       <FetchingData />
     </div>
