@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 import style from "./ItemList.module.css";
 
 export const ItemListContainer = () => {
-  const { counter, incrementar, decrementar, resetear } = useCounter();
+  const { counter, incrementar, decrementar, resetear } = useCounter(0);
 
   const [items, setItems] = useState([]);
 

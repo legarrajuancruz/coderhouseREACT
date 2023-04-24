@@ -10,12 +10,13 @@ import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 function App() {
   return (
     <div className="App">
-      <NavbarContainer />
-      <ItemListContainer />
-      <Home />
-      <Footer />
-      <ItemDetailContainer />
-      <FetchingData />
+      <NavbarContainer>
+        <ItemListContainer />
+        <ItemDetailContainer />
+        {/* <Home /> */}
+        {/* <Footer />*/}
+        {/*<FetchingData /> */}
+      </NavbarContainer>
     </div>
   );
 }
