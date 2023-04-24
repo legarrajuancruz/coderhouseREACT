@@ -1,13 +1,17 @@
 import estilo from "./Navbar.module.css";
 import { CartWidgetContainer } from "../CartWidget/CartWidgetContainer";
 import imgLogo from "../../assets/images/Datacom Isotipo.png";
+import { Outlet, Link } from "react-router-dom";
+import { Footer } from "../../Footer";
 
-export const NavbarContainer = ({ children }) => {
+export const NavbarContainer = () => {
   return (
     <>
       <div className={estilo.ContainerNavbar}>
         <div className={estilo.datacom}>
-          <img src={imgLogo} className={estilo.imgLogo} alt="Logo Datacom" />
+          <Link to="/">
+            <img src={imgLogo} className={estilo.imgLogo} alt="Logo Datacom" />
+          </Link>
         </div>
 
         <ul className={estilo.ContainerNavbarLi}>
@@ -23,7 +27,10 @@ export const NavbarContainer = ({ children }) => {
           <CartWidgetContainer />
         </div>
       </div>
-      {children}
+      <Outlet />
+      <div>
+        <Footer />
+      </div>
     </>
   );
 };

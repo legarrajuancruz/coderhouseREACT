@@ -23,18 +23,6 @@ export const ItemListContainer = () => {
       <div>
         <ItemListPresentation items={items} />
       </div>
-      <h1>{counter}</h1>
-      <div className={style.ordenBotones}>
-        <Button variant="contained" onClick={incrementar}>
-          SUMAR
-        </Button>
-        <Button variant="contained" onClick={decrementar}>
-          RESTAR
-        </Button>
-        <Button variant="contained" onClick={resetear}>
-          RESETEAR
-        </Button>
-      </div>
     </div>
   );
 };

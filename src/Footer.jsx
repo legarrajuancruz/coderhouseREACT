@@ -1,7 +1,8 @@
 export const Footer = () => {
   return (
     <div>
-      <h1>Estoy en el footer</h1>
+      {" "}
+      <h4>DATACOM Servicios Informaticos</h4>
     </div>
   );
 };
