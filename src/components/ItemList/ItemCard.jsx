@@ -9,8 +9,12 @@ import { Link } from "react-router-dom";
 
 export const ItemCard = ({ items }) => {
   return (
-    <Card sx={{ Width: 345 }}>
-      <CardMedia sx={{ height: 260 }} image={items.img} title={items.title} />
+    <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        sx={{ width: 300, height: 260 }}
+        image={items.img}
+        title={items.title}
+      />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {items.title}
