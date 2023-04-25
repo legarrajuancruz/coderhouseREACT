@@ -9,7 +9,7 @@ export const ItemListPresentation = ({ items }) => {
         flexWrap: "wrap",
         padding: "25px",
         marginTop: "1vh",
-        marginBottom: "1vh",
+        marginBottom: "25px",
       }}
     >
       {items.map((items) => {

@@ -1,22 +1,24 @@
 import { useState, useEffect } from "react";
 import { ItemListPresentation } from "./ItemListPresentation";
 import { products } from "../ProductsMock";
-import useCounter from "../../utils/hooks/useCounter";
-import { Button } from "@mui/material";
-import style from "./ItemList.module.css";
+import { useParams } from "react-router-dom";
 
 export const ItemListContainer = () => {
-  const { counter, incrementar, decrementar, resetear } = useCounter(0);
-
   const [items, setItems] = useState([]);
 
+  const { categoria } = useParams();
+
   useEffect(() => {
+    const productosFiltrados = products.filter(
+      (prod) => prod.category === categoria
+    );
+
     const tarea = new Promise((resolve, reject) => {
-      resolve(products);
+      resolve(categoria ? productosFiltrados : products);
     });
 
     tarea.then((res) => setItems(res)).catch((error) => console.log(error));
-  }, []);
+  }, [categoria]);
 
   return (
     <div>

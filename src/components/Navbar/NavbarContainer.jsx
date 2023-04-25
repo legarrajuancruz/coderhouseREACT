@@ -15,13 +15,27 @@ export const NavbarContainer = () => {
         </div>
 
         <ul className={estilo.ContainerNavbarLi}>
-          <li>Motherboards</li>
-          <li>Procesadores</li>
-          <li>Memorias</li>
-          <li>Placas de video</li>
-          <li>Discos</li>
-          <li>Fuentes</li>
-          <li>Gabinetes</li>
+          <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+            Todos
+          </Link>
+          <Link
+            to="/categoria/motherboard"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Motherboards
+          </Link>
+          <Link
+            to="/categoria/procesador"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Procesadores
+          </Link>
+          <Link
+            to="/categoria/video"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Placas de video
+          </Link>
         </ul>
         <div className={estilo.CarWidget}>
           <CartWidgetContainer />
