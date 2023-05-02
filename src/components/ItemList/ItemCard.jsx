@@ -9,7 +9,14 @@ import { Link } from "react-router-dom";
 
 export const ItemCard = ({ items }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card
+      sx={{
+        maxWidth: 345,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <CardMedia
         sx={{ width: 300, height: 260 }}
         image={items.img}

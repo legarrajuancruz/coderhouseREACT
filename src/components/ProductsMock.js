@@ -10,6 +10,15 @@ export let products = [
   },
   {
     id: 2,
+    title: "Intel Core i5",
+    price: 126000,
+    stock: 7,
+    description: "Procesador Intel Core i5-12400",
+    category: "procesador",
+    img: "https://res.cloudinary.com/dl5zwia3m/image/upload/v1682391045/Corei5_ppcqwb.png",
+  },
+  {
+    id: 3,
     title: "Ryzen 7",
     price: 49500,
     stock: 13,
@@ -17,8 +26,9 @@ export let products = [
     category: "procesador",
     img: "https://res.cloudinary.com/dl5zwia3m/image/upload/v1682391046/Ryzen7_ospw2g.jpg",
   },
+
   {
-    id: 3,
+    id: 4,
     title: "Nvidia GTX 1050ti",
     price: 127000,
     stock: 9,
@@ -27,7 +37,7 @@ export let products = [
     img: "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681663597/gtx1050ti_tu9duy.png",
   },
   {
-    id: 4,
+    id: 5,
     title: "Nvidia RTX 3060",
     price: 279000,
     stock: 15,
@@ -36,7 +46,7 @@ export let products = [
     img: "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681663601/rtx3060_ln3rsq.png",
   },
   {
-    id: 5,
+    id: 6,
     title: "Nvidia RTX 3070ti",
     price: 35000,
     stock: 18,
@@ -45,12 +55,30 @@ export let products = [
     img: "https://res.cloudinary.com/dl5zwia3m/image/upload/v1681663598/rtx3070ti_tb18yc.png",
   },
   {
-    id: 6,
+    id: 7,
     title: "H310M-H",
     price: 98000,
     stock: 12,
     description: "Placa madre GIGABYTE H310M-h",
     category: "motherboard",
     img: "https://res.cloudinary.com/dl5zwia3m/image/upload/v1682391047/GIGABYTEH310M-H_dcqzzi.png",
+  },
+  {
+    id: 8,
+    title: "TUF B450M",
+    price: 120000,
+    stock: 11,
+    description: "Placa madre ASUS TUF B450M",
+    category: "motherboard",
+    img: "https://res.cloudinary.com/dl5zwia3m/image/upload/v1682391046/TUFB450_xhwrae.jpg",
+  },
+  {
+    id: 9,
+    title: "A320M-A PRO",
+    price: 96000,
+    stock: 7,
+    description: "Placa madre MSI A320M-A PRO",
+    category: "motherboard",
+    img: "https://res.cloudinary.com/dl5zwia3m/image/upload/v1682391046/MSIA320M_g0fifl.png",
   },
 ];
