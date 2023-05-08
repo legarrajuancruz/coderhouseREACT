@@ -1,28 +1,22 @@
 import { useState } from "react";
 import { CounterPresentation } from "./CounterPresentation";
+import { Alert } from "@mui/material";
 
-export const CounterContainer = () => {
+export const CounterContainer = ({ stock, agregar }) => {
   const [counter, setCounter] = useState(0);
-  const [user, setUser] = useState("");
 
   let sumar = () => {
-    setCounter(counter + 1);
+    if (counter < stock) {
+      setCounter(counter + 1);
+    } else {
+      alert("stock maximo");
+    }
   };
 
   const restar = () => {
-    setCounter(counter - 1);
-  };
-
-  const reiniciar = () => {
-    setCounter(0);
-  };
-
-  const login = () => {
-    setUser("Hola Juan Cruz");
-  };
-
-  const logout = () => {
-    setUser("");
+    if (counter > 0) {
+      setCounter(counter - 1);
+    }
   };
 
   return (
@@ -31,10 +25,7 @@ export const CounterContainer = () => {
         counter={counter}
         sumar={sumar}
         restar={restar}
-        reiniciar={reiniciar}
-        login={login}
-        logout={logout}
-        user={user}
+        agregar={agregar}
       />
     </div>
   );

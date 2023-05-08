@@ -13,11 +13,15 @@ const ItemDetailContainer = () => {
     setProduct(encontrado);
   }, [id]);
 
-  console.log(product);
+  const agregar = (cantidad) => {
+    console.log(
+      `se agregaron  al carrito ${cantidad} unidad/es ${product.title}`
+    );
+  };
 
   return (
     <div>
-      <ItemDetailPresentation product={product} />
+      <ItemDetailPresentation product={product} agregar={agregar} />
     </div>
   );
 };
