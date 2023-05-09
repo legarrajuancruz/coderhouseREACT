@@ -5,13 +5,14 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
 export const CartWidgetPresentation = () => {
-  const { cart } = useContext(CartContext);
+  const { cantidadTotal } = useContext(CartContext);
 
+  let total = cantidadTotal();
   return (
     <Link to="/cart">
       <div className={estilos.CartWidgetPos}>
         <RiShoppingCartLine size={25} />
-        <h3>{cart.length}</h3>
+        <h3>{total}</h3>
       </div>
     </Link>
   );

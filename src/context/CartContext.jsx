@@ -36,7 +36,28 @@ export const CartContextProvider = ({ children }) => {
     setCart(productosFiltrados);
   };
 
-  let data = { cart, agregarAlCarrito, vaciarCarrito, borrarProducto };
+  const sumaTotal = () => {
+    let total = cart.reduce((acumulador, eL) => {
+      return acumulador + eL.price * eL.quantity;
+    }, 0);
+    return total;
+  };
+
+  const cantidadTotal = () => {
+    let total = cart.reduce((acumulador, eL) => {
+      return acumulador + eL.quantity;
+    }, 0);
+    return total;
+  };
+
+  let data = {
+    cart,
+    agregarAlCarrito,
+    vaciarCarrito,
+    borrarProducto,
+    sumaTotal,
+    cantidadTotal,
+  };
 
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
 };
