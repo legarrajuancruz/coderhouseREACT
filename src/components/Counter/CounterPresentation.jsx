@@ -18,11 +18,11 @@ export const CounterPresentation = ({
       }}
     >
       <Button variant="contained" onClick={sumar}>
-        Sumar
+        +
       </Button>{" "}
       <h2>{counter}</h2>
       <Button variant="contained" onClick={restar}>
-        Restar
+        -
       </Button>
       <Button
         style={{ border: "1px solid blue" }}
