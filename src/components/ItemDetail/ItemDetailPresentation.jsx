@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import { CounterContainer } from "../Counter/CounterContainer";
 
-export const ItemDetailPresentation = ({ product, agregar }) => {
+export const ItemDetailPresentation = ({ product, agregar, cantidadTotal }) => {
   return (
     <div className={estilo.ubicacion}>
       <h1> {product.title} </h1>
@@ -14,7 +14,11 @@ export const ItemDetailPresentation = ({ product, agregar }) => {
       <h2> ${product.price} </h2>
       <h3>Stock {product.stock} Unidades</h3>
       <div>
-        <CounterContainer stock={product.stock} agregar={agregar} />
+        <CounterContainer
+          stock={product.stock}
+          agregar={agregar}
+          initial={cantidadTotal}
+        />
       </div>
       <div>
         <Link to="/">

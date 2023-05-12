@@ -7,7 +7,7 @@ import { CartContext } from "../../context/CartContext";
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
 
-  const { agregarAlCarrito } = useContext(CartContext);
+  const { agregarAlCarrito, obtenerStockPorId } = useContext(CartContext);
 
   const { id } = useParams();
 
@@ -25,9 +25,15 @@ const ItemDetailContainer = () => {
     agregarAlCarrito(data);
   };
 
+  let cantidadTotal = obtenerStockPorId(product.id);
+
   return (
     <div>
-      <ItemDetailPresentation product={product} agregar={agregar} />
+      <ItemDetailPresentation
+        product={product}
+        agregar={agregar}
+        cantidadTotal={cantidadTotal}
+      />
     </div>
   );
 };

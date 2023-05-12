@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CounterPresentation } from "./CounterPresentation";
 import { Alert } from "@mui/material";
 
-export const CounterContainer = ({ stock, agregar }) => {
-  const [counter, setCounter] = useState(0);
+export const CounterContainer = ({ stock, agregar, initial = 1 }) => {
+  const [counter, setCounter] = useState(initial);
 
-  let sumar = () => {
+  useEffect(() => {
+    setCounter(initial);
+  }, [initial]);
+
+  const sumar = () => {
     if (counter < stock) {
       setCounter(counter + 1);
     } else {
@@ -14,7 +18,7 @@ export const CounterContainer = ({ stock, agregar }) => {
   };
 
   const restar = () => {
-    if (counter > 0) {
+    if (counter > 1) {
       setCounter(counter - 1);
     }
   };

@@ -7,23 +7,33 @@ export const CartPresentation = ({
   total,
 }) => {
   return (
-    <div>
+    <div
+      style={{
+        width: "100%",
+      }}
+    >
       {cart.map((eL) => {
         return (
           <div
             key={eL.id}
             style={{
-              height: "50px",
+              width: "70%",
+              height: "70px",
               display: "Flex",
-
+              justifyContent: "space-between",
               gap: "15px",
               marginBottom: "15px",
               alignItems: "center",
-              border: "1px solid black",
-              margin: "5px 5px 5px 5px ",
-              padding: "0 0 0 5px",
+              border: "1px solid grey",
+              borderRadius: "10px",
+              margin: "15px 15px 15px 15px ",
+              padding: "0 15px 0 15px",
             }}
           >
+            <div>
+              <img width="50px" src={eL.img} />
+            </div>
+
             <h2>{eL?.title}</h2>
             <h3>${eL?.price}</h3>
             <h3>Cantidad: {eL?.quantity}</h3>
@@ -33,11 +43,21 @@ export const CartPresentation = ({
           </div>
         );
       })}
-
-      <Button onClick={vaciarCarrito} variant="contained">
-        Vaciar Carrito
-      </Button>
-      <h3>El total del carrito es ${total}.-</h3>
+      <div
+        style={{
+          width: "30%",
+          border: "1px solid grey",
+          borderRadius: "10px",
+          margin: "15px 15px 15px 15px ",
+          padding: "15px 15px 15px 15px",
+          display: "flex",
+        }}
+      >
+        <Button onClick={vaciarCarrito} variant="contained">
+          Vaciar Carrito
+        </Button>
+        <h3>El total del carrito es ${total}.-</h3>
+      </div>
     </div>
   );
 };
