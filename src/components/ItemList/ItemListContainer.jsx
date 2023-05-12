@@ -23,27 +23,22 @@ export const ItemListContainer = () => {
     tarea.then((res) => setItems(res)).catch((error) => console.log(error));
   }, [categoria]);
 
-  if (items.length < 1) {
-    return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "cebter",
-          marginTop: "50px",
-          marginBottom: "50px",
-        }}
-      >
-        <PacmanLoader color="#3641d6" size={35} />;
-      </div>
-    );
-  }
-
   return (
     <div>
-      <div>
-        <ItemListPresentation items={items} />
-      </div>
+      {items.length === 0 && (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "50px",
+            marginBottom: "50px",
+          }}
+        >
+          <PacmanLoader color="#3641d6" size={35} />;
+        </div>
+      )}
+      <ItemListPresentation items={items} />
     </div>
   );
 };
