@@ -3,6 +3,7 @@ import { ItemDetailPresentation } from "./ItemDetailPresentation";
 import { products } from "../ProductsMock";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
+import Swal from "sweetalert2";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
@@ -23,6 +24,14 @@ const ItemDetailContainer = () => {
     };
 
     agregarAlCarrito(data);
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: `Se grego al carrito ${product.title}`,
+      showConfirmButton: false,
+      timer: 1500,
+    });
   };
 
   let cantidadTotal = obtenerStockPorId(product.id);

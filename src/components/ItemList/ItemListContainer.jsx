@@ -29,13 +29,15 @@ export const ItemListContainer = () => {
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
             marginTop: "50px",
             marginBottom: "50px",
+            fontSize: "12px",
           }}
         >
-          <PacmanLoader color="#3641d6" size={35} />;
+          <PacmanLoader color="#3641d6" size={35} />; Loading...
         </div>
       )}
       <ItemListPresentation items={items} />

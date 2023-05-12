@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 
 export const CartPresentation = ({
   cart,
-  vaciarCarrito,
   borrarProducto,
   total,
+  vaciarCarroAlert,
 }) => {
   return (
     <div
@@ -51,12 +52,21 @@ export const CartPresentation = ({
           margin: "15px 15px 15px 15px ",
           padding: "15px 15px 15px 15px",
           display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          alignItems: "center",
         }}
       >
-        <Button onClick={vaciarCarrito} variant="contained">
-          Vaciar Carrito
-        </Button>
         <h3>El total del carrito es ${total}.-</h3>
+        {cart.length > 0 ? (
+          <Button onClick={vaciarCarroAlert} variant="contained">
+            Vaciar Carrito
+          </Button>
+        ) : (
+          <Link to="/">
+            <Button variant="contained">Comprar productos</Button>
+          </Link>
+        )}
       </div>
     </div>
   );

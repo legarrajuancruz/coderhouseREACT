@@ -13,14 +13,20 @@ export const ItemDetailPresentation = ({ product, agregar, cantidadTotal }) => {
       <h4> {product.description}</h4>
       <h2> ${product.price} </h2>
       <h3>Stock {product.stock} Unidades</h3>
-      <div>
-        <CounterContainer
-          stock={product.stock}
-          agregar={agregar}
-          initial={cantidadTotal}
-        />
-      </div>
-      <div>
+
+      <CounterContainer
+        stock={product.stock}
+        agregar={agregar}
+        initial={cantidadTotal}
+      />
+
+      <div
+        style={{
+          marginTop: "15px",
+          marginBottom: "15px",
+          alignItems: "center",
+        }}
+      >
         <Link to="/">
           <Button variant="contained">Volver</Button>
         </Link>
