@@ -13,7 +13,7 @@ export const CartWidgetContainer = () => {
       <div className={estilos.CartWidgetPos}>
         <RiShoppingCartLine size={25} />
 
-        {total > 0 ? <h3 className="bubble-counter">{total}</h3> : <></>}
+        {total > 0 ? <h3 className={estilos.bubble}>{total}</h3> : <></>}
       </div>
     </Link>
   );

@@ -1,22 +1,18 @@
 .CartWidgetPos {
-  width: 100%;
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
   margin-right: 25px;
 }
 
-.bubble-counter {
-  width: 30px;
-  height: 30px;
-  border: 2px solid beige;
+.bubble {
+  width: 20px;
+  height: 20px;
+  border: 2px dotted rgb(185, 229, 243);
   border-radius: 50%;
-  position: absolute;
-  top: -50%;
-  right: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
 }
