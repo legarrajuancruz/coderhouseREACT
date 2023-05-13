@@ -2,15 +2,18 @@ export const Footer = () => {
   return (
     <div
       style={{
+        position: "absolute",
+        width: "100%",
+        height: "100%",
         height: "35px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         padding: "15px",
-        marginTop: "1vh",
         gap: "50px",
         color: "white",
         backgroundColor: "black",
+        marginTop: "15%",
       }}
     >
       {" "}

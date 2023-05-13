@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CounterPresentation } from "./CounterPresentation";
 import { Alert } from "@mui/material";
+import Swal from "sweetalert2";
 
 export const CounterContainer = ({ stock, agregar, initial = 1 }) => {
   const [counter, setCounter] = useState(initial);
@@ -13,7 +14,11 @@ export const CounterContainer = ({ stock, agregar, initial = 1 }) => {
     if (counter < stock) {
       setCounter(counter + 1);
     } else {
-      alert("stock maximo");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Stock Maximo!",
+      });
     }
   };
 

@@ -6,6 +6,7 @@ export const CounterPresentation = ({
   sumar,
   restar,
   agregar,
+  sumaTotal,
 }) => {
   return (
     <div
@@ -31,9 +32,6 @@ export const CounterPresentation = ({
       <Button variant="outlined" onClick={() => agregar(counter)}>
         Agregar al carrito
       </Button>
-      <Link to="/cart">
-        <Button variant="contained">Terminar la Compra</Button>
-      </Link>
     </div>
   );
 };

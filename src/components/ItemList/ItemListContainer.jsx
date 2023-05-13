@@ -37,7 +37,8 @@ export const ItemListContainer = () => {
             fontSize: "12px",
           }}
         >
-          <PacmanLoader color="#3641d6" size={35} />; Loading...
+          <PacmanLoader color="#3641d6" size={35} />
+          Loading...
         </div>
       )}
       <ItemListPresentation items={items} />

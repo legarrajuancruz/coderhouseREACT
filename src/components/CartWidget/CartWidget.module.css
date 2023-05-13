@@ -7,3 +7,16 @@
   align-items: center;
   margin-right: 25px;
 }
+
+.bubble-counter {
+  width: 30px;
+  height: 30px;
+  border: 2px solid beige;
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+  right: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

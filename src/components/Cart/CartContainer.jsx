@@ -2,20 +2,21 @@ import { useContext } from "react";
 import { CartPresentation } from "./CartPresentation";
 import { CartContext } from "../../context/CartContext";
 import Swal from "sweetalert2";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const CartContainer = () => {
   const { cart, borrarProducto, sumaTotal, vaciarCarrito } =
     useContext(CartContext);
 
   let total = sumaTotal();
+  const navigate = useNavigate();
 
   const vaciarCarroAlert = () => {
     Swal.fire({
-      title: "Deseas guardar los cambios ?",
+      title: "Deseas vaciar el carrito ?",
       showDenyButton: true,
       showCancelButton: false,
-      confirmButtonText: "Eliminar",
+      confirmButtonText: "Vaciar",
       denyButtonText: `Descartar`,
     }).then((result) => {
       if (result.isConfirmed) {
@@ -34,6 +35,7 @@ export const CartContainer = () => {
         borrarProducto={borrarProducto}
         total={total}
         vaciarCarroAlert={vaciarCarroAlert}
+        navigate={navigate}
       />
     </div>
   );
