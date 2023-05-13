@@ -55,9 +55,11 @@ export const CartPresentation = ({
           flexDirection: "row",
           justifyContent: "space-evenly",
           alignItems: "center",
+          gap: "15px",
         }}
       >
         <h3>El total del carrito es ${total}.-</h3>
+
         {cart.length > 0 ? (
           <Button onClick={vaciarCarroAlert} variant="contained">
             Vaciar Carrito

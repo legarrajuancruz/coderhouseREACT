@@ -29,6 +29,7 @@ function App() {
             <Route path="/Item" element={<h1>Item</h1>} />
 
             <Route path="*" element={<h2>404 Not Found</h2>} />
+            <Route path="/portal" element={<h2>Portal de Compras</h2>} />
           </Route>
         </Routes>
       </CartContextProvider>

@@ -12,7 +12,8 @@ export const CartWidgetPresentation = () => {
     <Link to="/cart">
       <div className={estilos.CartWidgetPos}>
         <RiShoppingCartLine size={25} />
-        <h3>{total}</h3>
+
+        {total > 0 ? <h3>{total}</h3> : <></>}
       </div>
     </Link>
   );

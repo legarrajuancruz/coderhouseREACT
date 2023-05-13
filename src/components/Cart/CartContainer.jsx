@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartPresentation } from "./CartPresentation";
 import { CartContext } from "../../context/CartContext";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 export const CartContainer = () => {
   const { cart, borrarProducto, sumaTotal, vaciarCarrito } =
