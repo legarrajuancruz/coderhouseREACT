@@ -4,7 +4,6 @@ export const Footer = () => {
       style={{
         position: "absolute",
         width: "100%",
-        height: "100%",
         height: "35px",
         display: "flex",
         justifyContent: "center",

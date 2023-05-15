@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { CounterPresentation } from "./CounterPresentation";
-import { Alert } from "@mui/material";
 import Swal from "sweetalert2";
 
 export const CounterContainer = ({ stock, agregar, initial = 1 }) => {

@@ -34,7 +34,7 @@ export const CartPresentation = ({
             }}
           >
             <div>
-              <img width="50px" src={eL.img} />
+              <img alt="Logo empresa" width="50px" src={eL.img} />
             </div>
 
             <h2>{eL?.title}</h2>
@@ -74,7 +74,7 @@ export const CartPresentation = ({
           <Button
             variant="contained"
             color="secondary"
-            onClick={() => navigate("/form")}
+            onClick={() => navigate("/checkout")}
           >
             Terminar Compra
           </Button>

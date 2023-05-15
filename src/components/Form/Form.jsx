@@ -4,6 +4,7 @@ export const Form = () => {
   const [data, setData] = useState({
     nombre: "",
     apellido: "",
+    telefono: "",
   });
 
   const cambiosInput = (e) => {
@@ -31,6 +32,13 @@ export const Form = () => {
           placeholder="apellido"
           value={data.apellido}
           name="apellido"
+          onChange={cambiosInput}
+        />
+        <input
+          type="text"
+          placeholder="telefono"
+          value={data.telefono}
+          name="telefono"
           onChange={cambiosInput}
         />
         <button type="submit">Enviar</button>

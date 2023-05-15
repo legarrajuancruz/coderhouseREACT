@@ -1,5 +1,4 @@
 import Button from "@mui/material/Button";
-import { Link, Routes } from "react-router-dom";
 export const CounterPresentation = ({
   counter,
   user,

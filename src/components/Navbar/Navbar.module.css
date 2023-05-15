@@ -7,18 +7,24 @@
   background-color: rgb(1, 45, 82);
 }
 
-.ContainerNavbarLi {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  width: 50%;
+.Botones {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  width: 30%;
 }
 
-.ContainerNavbarLi :hover {
+.Botonera {
+  display: flex;
+  align-items: center;
+}
+
+.Botonera :hover {
   background-color: rgb(40, 118, 182);
+}
+
+.Link {
+  text-decoration: none;
+  color: white;
 }
 
 .CarWidget {
