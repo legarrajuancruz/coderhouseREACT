@@ -1,11 +1,7 @@
 import "./App.css";
 import { NavbarContainer } from "./components/Navbar/NavbarContainer";
-import { Home } from "./Home";
-import { Footer } from "./Footer";
 import { ItemListContainer } from "./components/ItemList/ItemListContainer";
-import { CounterContainer } from "./components/Counter/CounterContainer";
 import { Form } from "./components/Form/Form";
-import FetchingData from "./components/FetchingData/FetchingData";
 import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartContainer } from "./components/Cart/CartContainer";
