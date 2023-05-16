@@ -5,11 +5,12 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
 export const CartContainer = () => {
-  const { cart, borrarProducto, sumaTotal, vaciarCarrito } =
+  const { cart, borrarProducto, sumaTotal, vaciarCarrito, cantidadTotal } =
     useContext(CartContext);
 
   let total = sumaTotal();
   const navigate = useNavigate();
+  const totalProductos = cantidadTotal();
 
   const vaciarCarroAlert = () => {
     Swal.fire({
@@ -36,6 +37,7 @@ export const CartContainer = () => {
         total={total}
         vaciarCarroAlert={vaciarCarroAlert}
         navigate={navigate}
+        totalProductos={totalProductos}
       />
     </div>
   );
