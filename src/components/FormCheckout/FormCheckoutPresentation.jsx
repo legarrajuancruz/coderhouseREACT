@@ -4,7 +4,6 @@ export const FormCheckoutPresentation = ({
   handleSubmit,
   handleChange,
   errors,
-  values,
 }) => {
   return (
     <div style={{ paddingTop: "50px" }}>
@@ -39,32 +38,15 @@ export const FormCheckoutPresentation = ({
           <Grid item xs={11} sm={7}>
             <TextField
               id="outlined-basic"
-              label="password"
+              label="telefono"
               variant="outlined"
-              name="password"
+              name="telefono"
               fullWidth
               onChange={handleChange}
-              error={errors.password ? true : false}
-              helperText={errors.password}
-              type="password"
+              error={errors.telefono ? true : false}
+              helperText={errors.telefono}
             />
           </Grid>
-
-          {values.password.length > 0 && (
-            <Grid item xs={11} sm={7}>
-              <TextField
-                id="outlined-basic"
-                label="Confirmar"
-                variant="outlined"
-                name="confirmPassword"
-                fullWidth
-                onChange={handleChange}
-                error={errors.confirmPassword ? true : false}
-                helperText={errors.confirmPassword}
-                type="password"
-              />
-            </Grid>
-          )}
 
           <Grid item xs={6}>
             <Button type="submit" variant="contained" sx={{ marginTop: 2 }}>

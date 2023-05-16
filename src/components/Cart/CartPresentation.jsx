@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import { Grid } from "@mui/material";
 
@@ -12,14 +11,14 @@ export const CartPresentation = ({
 }) => {
   return (
     <Grid container flex justifyContent="space-center">
-      <Grid Item xs={11} sm={9}>
+      <Grid item xs={11} sm={9}>
         {cart.map((eL) => {
           return (
             <div
               key={eL.id}
               style={{
                 width: "90%",
-                height: "70px",
+                height: "15px",
                 display: "Flex",
                 justifyContent: "space-between",
                 marginBottom: "15px",
@@ -31,7 +30,7 @@ export const CartPresentation = ({
               }}
             >
               <div>
-                <img alt="Foto producto" width="50px" src={eL.img} />
+                <img alt="Foto producto" width="30px" src={eL.img} />
               </div>
 
               <h2>{eL?.title}</h2>
@@ -51,8 +50,8 @@ export const CartPresentation = ({
         sm={3}
         style={{
           width: "350px",
-          height: "550px",
-          border: "1px solid grey",
+          height: "750px",
+          borderLeft: "1px solid grey",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
@@ -63,17 +62,22 @@ export const CartPresentation = ({
       >
         <h2>Descripcion del carrito:</h2>
         <h3>Cantidad de productos: {totalProductos} </h3>
-        <h3>El total del carrito es ${total}.-</h3>
+        <h3>El total del carrito es: ${total}.-</h3>
 
-        <div>
+        <div
+          style={{
+            display: "flex",
+            marginRight: "15px",
+          }}
+        >
           {cart.length > 0 ? (
             <Button onClick={vaciarCarroAlert} variant="contained">
               Vaciar Carrito
             </Button>
           ) : (
-            <Link to="/">
-              <Button variant="contained">Comprar productos</Button>
-            </Link>
+            <Button onClick={() => navigate("/")} variant="contained">
+              Comprar productos
+            </Button>
           )}
 
           {cart.length < 1 ? (
