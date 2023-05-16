@@ -1,7 +1,6 @@
 import "./App.css";
 import { NavbarContainer } from "./components/Navbar/NavbarContainer";
 import { ItemListContainer } from "./components/ItemList/ItemListContainer";
-import { Form } from "./components/Form/Form";
 import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartContainer } from "./components/Cart/CartContainer";
@@ -21,13 +20,9 @@ function App() {
             />
             <Route path="ItemDetail/:id" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<CartContainer />} />
-            <Route path="/Form" element={<Form />} />
             <Route path="/checkout" element={<FormCheckoutContainer />} />
-            <Route path="/login" element={<h3> Este es el login</h3>} />
             <Route path="/Item" element={<h1>Item</h1>} />
-
             <Route path="*" element={<h2>404 Not Found</h2>} />
-            <Route path="/portal" element={<h2>Portal de Compras</h2>} />
           </Route>
         </Routes>
       </CartContextProvider>
