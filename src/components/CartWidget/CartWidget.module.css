@@ -7,12 +7,14 @@
 }
 
 .bubble {
-  width: 20px;
-  height: 20px;
-  border: 2px dotted rgb(185, 229, 243);
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
+  background-color: rgb(83, 0, 160);
+  font-size: 20px;
+  color: white;
 }

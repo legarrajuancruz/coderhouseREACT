@@ -5,6 +5,7 @@ import { CartContext } from "../../context/CartContext";
 import Swal from "sweetalert2";
 import { db } from "../../firebaseConfig";
 import { getDoc, collection, doc } from "firebase/firestore";
+import { Padding } from "@mui/icons-material";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
@@ -42,7 +43,12 @@ const ItemDetailContainer = () => {
   let cantidadTotal = obtenerStockPorId(product.id);
 
   return (
-    <div>
+    <div
+      style={{
+        paddingTop: "2%",
+        paddingBottom: "2%",
+      }}
+    >
       <ItemDetailPresentation
         product={product}
         agregar={agregar}

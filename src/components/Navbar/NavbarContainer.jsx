@@ -2,7 +2,7 @@ import estilo from "./Navbar.module.css";
 import { CartWidgetContainer } from "../CartWidget/CartWidgetContainer";
 import imgLogo from "../../assets/images/Datacom Isotipo.png";
 import { Outlet, Link } from "react-router-dom";
-import { Footer } from "../../Footer";
+import { FooterContainer } from "../Footer/FooterContainer";
 import { db } from "../../firebaseConfig";
 import { getDocs, collection } from "firebase/firestore";
 import { useEffect, useState } from "react";
@@ -54,7 +54,7 @@ export const NavbarContainer = () => {
       </div>
       <Outlet />
       <div>
-        <Footer />
+        <FooterContainer />
       </div>
     </>
   );

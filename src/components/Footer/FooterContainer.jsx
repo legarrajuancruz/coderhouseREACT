@@ -1,8 +1,7 @@
-export const Footer = () => {
+export const FooterContainer = () => {
   return (
     <div
       style={{
-        position: "absolute",
         width: "100%",
         height: "35px",
         display: "flex",
@@ -12,7 +11,6 @@ export const Footer = () => {
         gap: "50px",
         color: "white",
         backgroundColor: "black",
-        marginTop: "15%",
       }}
     >
       {" "}

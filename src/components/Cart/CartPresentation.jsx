@@ -51,7 +51,7 @@ export const CartPresentation = ({
         style={{
           width: "350px",
           height: "750px",
-          borderLeft: "1px solid grey",
+          borderLeft: "2px double grey",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",

@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid rgb(179, 179, 179);
+  border: 1px solid rgb(206, 206, 206);
   margin-left: 33%;
-  margin-top: 25px;
   border-radius: 15px;
+  background-color: rgb(248, 246, 246);
 }
