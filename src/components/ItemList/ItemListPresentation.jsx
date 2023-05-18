@@ -7,8 +7,6 @@ export const ItemListPresentation = ({ items }) => {
         display: "flex",
         justifyContent: "center",
         flexWrap: "wrap",
-        padding: "25px",
-        marginTop: "1vh",
         marginBottom: "25px",
         gap: "50px",
       }}

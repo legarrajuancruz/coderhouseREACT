@@ -38,19 +38,20 @@ export const ItemListContainer = () => {
   }, [categoria]);
 
   return (
-    <div>
+    <div
+      style={{
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "50px",
+        marginBottom: "50px",
+        fontSize: "12px",
+      }}
+    >
       {items.length === 0 && (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "50px",
-            marginBottom: "50px",
-            fontSize: "12px",
-          }}
-        >
+        <div>
           <PacmanLoader color="#3641d6" size={35} />
           Loading...
         </div>

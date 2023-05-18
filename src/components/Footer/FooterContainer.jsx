@@ -2,7 +2,6 @@ export const FooterContainer = () => {
   return (
     <div
       style={{
-        width: "100%",
         height: "35px",
         display: "flex",
         justifyContent: "center",

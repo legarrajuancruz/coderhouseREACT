@@ -10,7 +10,7 @@
 .Botones {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 25%;
 }
 
 .Botonera {
@@ -28,7 +28,7 @@
 }
 
 .CarWidget {
-  width: 25%;
+  width: 35%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -37,18 +37,18 @@
 }
 
 .datacom {
-  width: 25%;
+  width: 35%;
   color: white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 25px;
 }
 
 .imgLogo {
+  display: flex;
+  align-items: "center";
   width: auto;
   height: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 10px;
 }
