@@ -24,7 +24,7 @@ const saludar = () => {
 - yup
 - sweetalert2
 
-## Si queres usar este proyecto necesitas las siguientes variables de entorno, pero antes deberas crear el archivo .env y asignarle lo siguiente
+## Si queres usar este proyecto necesitas las siguientes variables de entorno, pero antes deberas crear el archivo .env y asignar lo siguiente
 
 - REACT_APP_APIKEY=
 - REACT_APP_AUTHDOMAIN=
